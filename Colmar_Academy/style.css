@@ -3,11 +3,18 @@ html {
   font-size: 1vw;
 }
 
-body {
+@media (min-width:481px){
+  body {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   min-width: 50%;
+  }
+}
+@media (max-width:480px) {
+  body{
+    max-width: 100%;
+  }
 }
 
 header {
@@ -17,11 +24,21 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width:480px) {
+  .desktop{
+    display: none;
+  }
+}
+
 .logo {
   display: inline-flex;
   align-items: center;
   padding-left: 24px;
   font-weight: 600;
+}
+
+.logo:hover{
+  cursor: pointer;
 }
 
 .grey {
@@ -116,6 +133,10 @@ button:hover {
   margin-bottom: 32px;
 }
 
+.main:hover{
+  cursor: pointer;
+}
+
 .main h1 {
   font-size: 2vw;
   padding: 24px 0px 12px 0px;
@@ -147,6 +168,7 @@ button:hover {
 
 .other:hover {
   background-color: lightgray;
+  cursor: pointer;
 }
 
 .other-image {
@@ -188,24 +210,26 @@ button:hover {
 }
 
 .title {
-  margin-top: 32px;
+  margin-top: 12px;
   margin-bottom: 32px;
   text-align: center;
+  font-size: 1.5vw;
 }
 
-.row {
-  display: inline-flex;
-  flex-direction: row;
-  height: 20%;
+.content {
+  display: flex;
   margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .course {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 8px;
+  background-color: white;
   width: 30%;
-  height: 100%;
+  padding-bottom: 8px;
 }
 
 .course:hover {
@@ -214,17 +238,18 @@ button:hover {
 
 .course img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
-.course-text {
-  background-color: white;
-  padding-left: 8px;
-  padding-top: 8px;
-  text-align: left;
-  font-size: 1vw;
-  height: 40%;
+.course h1 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+
+.course p {
+  padding-left: 16px;
+  margin-bottom: 8px;
+  margin-top: 0px;
 }
 
 .thesis {
@@ -256,6 +281,8 @@ button:hover {
 footer {
   width: 100%;
   display: inline-flex;
+  justify-content: space-between;
+  border-top: thin solid lightgray;
 }
 
 h1 {
