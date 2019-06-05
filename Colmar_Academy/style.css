@@ -2,8 +2,24 @@ html {
   font-family: Helvetica;
   font-size: 1vw;
 }
+/*test*/
+body {
+  background-color: lightblue;
+}
 
-@media only screen and (min-width: 481px){
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}
+/*fin test */
+@media (min-width: 481px){
   body {
   max-width: 80%;
   margin-left: auto;
@@ -11,12 +27,14 @@ html {
   min-width: 50%;
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   body{
-    max-width: 100%;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
-@media only screen and (min-width: 481px){
+@media (min-width: 481px){
   header {
     min-height: 32px;
     display: inline-flex;
@@ -24,7 +42,7 @@ html {
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .desktop{
     display: none;
   }
@@ -32,7 +50,7 @@ html {
     display: flex;
   }
 }
-@media only screen and (min-width: 481px){
+@media (min-width: 481px){
   .desktop{
     display: flex;
   }
