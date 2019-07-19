@@ -17,43 +17,41 @@
 </head>
 
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-      <div class="container">
-        <!--button mobile-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+      <!--button mobile-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!--logo et nav elements-->
-        <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
-        <div class="collapse navbar-collapse" id="Navbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="./index.html">
-              <span class="fa fa-home fa-lg col-1"></span>
-              <span class="col">Home</span>
-            </a></li>
-            <li class="nav-item active"><a class="nav-link" href="./aboutus.html">
-              <span class="fa fa-info fa-lg col-1"></span>
-              <span class="col">About</span>
-            </a></li>
-            <li class="nav-item active"><a class="nav-link" href="#">
-              <span class="fa fa-list fa-lg col-1"></span>
-              <span class="col">Menu</span>
-             </a></li>
-            <li class="nav-item active"><a class="nav-link" href="./contactus.html">
-              <span class="fa fa-address-card fa-lg col-1"></span>
-              <span class="col">Contact</span>
-            </a></li>
-          </ul>
-          <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-              <span class="fa fa-sign-in"></span> Login
-            </a>
-          </span>
-        </div>
+      <!--logo et nav elements-->
+      <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="./index.html">
+            <span class="fa fa-home fa-lg col-1"></span>
+            <span class="col">Home</span>
+          </a></li>
+          <li class="nav-item active"><a class="nav-link" href="./aboutus.html">
+            <span class="fa fa-info fa-lg col-1"></span>
+            <span class="col">About</span>
+          </a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">
+            <span class="fa fa-list fa-lg col-1"></span>
+            <span class="col">Menu</span>
+           </a></li>
+          <li class="nav-item active"><a class="nav-link" href="./contactus.html">
+            <span class="fa fa-address-card fa-lg col-1"></span>
+            <span class="col">Contact</span>
+          </a></li>
+        </ul>
+        <span class="navbar-text" id="loginButton">
+            <span class="fa fa-sign-in"></span> Login
+        </span>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!--Login modal -->
     <div id="loginModal" class="modal fade" role="dialog">
@@ -111,7 +109,7 @@
 
                 <!--Reservation button-->
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-block nav-link bg-warning" data-toggle="modal" data-target="#reservationModal">
+                    <a role="button" class="btn btn-block nav-link bg-warning" id="reservationButton">
                       Reserve Table
                     </a>
                 </div>
@@ -394,6 +392,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
